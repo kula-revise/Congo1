@@ -60,7 +60,7 @@
   .story-num { font-family: var(--serif); font-size: clamp(2.6rem,9vw,4rem); font-weight: 800; color: var(--a1); line-height: 1; letter-spacing: -0.02em; }
   .story-unit { font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fade); font-weight: 700; margin-top: 0.5rem; }
   .story-rule { width: 100%; height: 1px; background: rgba(27,42,51,0.22); margin: 1.4rem 0 1.6rem; }
-  .story-line { font-size: 1.24rem; line-height: 1.66; margin-bottom: 1.05rem; opacity: 0; transform: translateY(6px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .story-line { font-size: 1.24rem; line-height: 1.66; margin-bottom: 1.05rem; opacity: 0; transform: translateY(6px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .story-line.vis { opacity: 1; transform: translateY(0); }
   .story-line.last { color: var(--a2); font-style: italic; font-weight: 600; }
 
@@ -279,7 +279,7 @@ const FLOW = [
       "Everybody else in that room was just as much to blame for it as I was"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} points at what was missing and offers to show it, which is a case someone else can check. Option {opt1} is tempting because it's true, but it's just a complaint, and a complaint isn't an argument."
+    "explanation": "{opt0} points at what was missing and offers to show it. That's something another person can check. {opt1} is true, and that's exactly why it tempts. But it's a complaint, and a complaint isn't an argument."
   },
   {
     "type": "content",
@@ -337,7 +337,7 @@ const FLOW = [
       "The Congo was one of the richest territories anywhere in Africa in minerals and land"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} measures the exact thing you claimed: no trained people means no administration. A number that small against a whole population proves the point on its own. Options {opt1}, {opt2} and {opt3} are all true, but each needs a further step of reasoning before it says anything about running the country."
+    "explanation": "{opt0}. Fourteen graduates in a country of fourteen million. That number proves the point on its own: no trained people, no administration. {opt1}, {opt2} and {opt3} are all true, but each needs another step of reasoning before it says anything about running a country."
   },
   {
     "type": "question",
@@ -350,7 +350,7 @@ const FLOW = [
       "There were many different opinions in 1960 about what the Congo should do next"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} makes a claim and gives a reason: no administrators, so collapse. Option {opt1} is tempting because every word of it is true, but it's a sequence of events with no claim attached. Telling the story is not the same as arguing why it happened."
+    "explanation": "{opt0} makes a claim and gives a reason: no administrators, so collapse. {opt1} tempts because every word of it is true. But it's a run of events with no claim attached, and telling the story isn't the same as arguing why it happened."
   },
   {
     "type": "content",
@@ -425,7 +425,7 @@ const FLOW = [
       2,
       3
     ],
-    "explanation": "The order is the argument. The mutiny came first and opened the door. Katanga broke away days later, and Lumumba was killed in January 1961. Mobutu took power for good only in 1965. Getting the sequence right shows the collapse building, rather than listing events at random."
+    "explanation": "The order is the argument. The mutiny came first and opened the door. Katanga broke away days later, and Lumumba was dead by January 1961. Mobutu only took power for good in 1965. Get the sequence right and you show the collapse building, instead of listing events at random."
   },
   {
     "type": "question",
@@ -438,7 +438,7 @@ const FLOW = [
       "A United Nations force arrived but would not use force against Katanga"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} turns the secession into a threat to the state itself. A government that loses half its revenue can't pay an army or an administration. Options {opt1}, {opt2} and {opt3} are all accurate, but each describes what happened around the secession, not what made it dangerous."
+    "explanation": "{opt0}. Lose half your revenue and you can't pay an army or an administration. That's what turns a secession into a threat to the state itself. {opt1}, {opt2} and {opt3} are all accurate, but each describes what happened around the secession, not what made it dangerous."
   },
   {
     "type": "question",
@@ -451,7 +451,7 @@ const FLOW = [
       "There is no way of deciding this, because respected historians disagree with each other and there is evidence pointing in both directions"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} takes a position and then qualifies it, which is what a weighed judgement looks like. Option {opt3} is tempting because it sounds balanced and fair, but it never actually answers the question. Sitting on the fence is not the same as weighing two sides."
+    "explanation": "{opt0} takes a side and then qualifies it. That's weighing. {opt3} tempts because it sounds fair and balanced, but it never answers the question. Sitting on the fence isn't the same as weighing two sides."
   },
   {
     "type": "content",
@@ -469,7 +469,7 @@ const FLOW = [
       "Mobutu was a brutal dictator from his first day in office and nothing in 1960 excuses any part of it"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} grants the need for control, then opens the door to judging what Mobutu did with it. Option {opt1} is tempting because it looks generous and even-handed. But it grants so much that there's nothing left to argue, and you've talked yourself out of a verdict."
+    "explanation": "{opt0} grants the need for control, then leaves you free to judge what Mobutu did with it. {opt1} tempts because it looks generous. But it grants so much that there's nothing left to say, and you've talked yourself out of a verdict."
   },
   {
     "type": "question",
@@ -482,7 +482,7 @@ const FLOW = [
       "Only in the very short term, since the whole crisis was effectively over by 1963 and the country then had two calm years before the coup arrived"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} grants the case, backs it with the secessions, then marks the limit of what it proves. That last clause is the whole argument in miniature. Option {opt3} is wrong on the facts. The eastern rebellion of 1964 was still going when Mobutu took power, so the country was not yet calm."
+    "explanation": "{opt0} grants the case, backs it with the secessions, then marks its limit. That last clause is the whole argument in miniature. {opt3} is wrong on the facts. The eastern rebellion of 1964 was still going when Mobutu took power, so the country wasn't calm."
   },
   {
     "type": "question",
@@ -505,7 +505,7 @@ const FLOW = [
       "2": 1,
       "3": 1
     },
-    "explanation": "The first two sit with Belgium: an empty administration and no officers, built over fifty years of colonial rule. The last two are choices Congolese leaders made after independence. Weighing means sorting what was inherited from what was decided, the move this whole lesson practises."
+    "explanation": "The first two sit with Belgium: an empty administration and no officers, built over fifty years. The last two are choices Congolese leaders made after independence. Weighing a question means sorting what was inherited from what was decided. This lesson keeps coming back to it."
   },
   {
     "type": "carousel",
@@ -563,7 +563,7 @@ const FLOW = [
       "Belgium prepared the Congo carefully for independence, so the disorder after 1960 was caused entirely by the ambitions of rival Congolese politicians"
     ],
     "correct": 0,
-    "explanation": "Option {opt0} states the inheritance and draws a consequence from it, which is an argument. Option {opt1} is tempting because it's correct and well dated. But it fills three pages and never says why any of it mattered. A sequence of events is not yet a case."
+    "explanation": "{opt0} states the inheritance and draws a consequence from it. That's an argument. {opt1} tempts because it's correct and well dated. But it fills three pages and never says why any of it mattered. A run of events isn't yet a case."
   },
   {
     "type": "runsum",
@@ -1020,7 +1020,7 @@ function showResults(){
   document.getElementById("finish-btn").addEventListener("click",()=>{
     const back=document.createElement("div");
     back.className="pop-back";
-    back.innerHTML=`<div class="pop"><div class="pop-label">Lesson complete</div><div class="pop-text">Click on the arrow above to continue to the next lesson.</div><button class="pop-btn" id="fin-ok">Close</button></div>`;
+    back.innerHTML=`<div class="pop"><div class="pop-label">Lesson 1 complete</div><div class="pop-text">Click on the arrow above to continue to the next lesson.</div><button class="pop-btn" id="fin-ok">Close</button></div>`;
     document.body.appendChild(back);
     document.getElementById("fin-ok").addEventListener("click",()=>back.remove());
   });
